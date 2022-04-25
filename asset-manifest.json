@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/bbq-front-web/static/css/main.6a90eac0.css",
+    "main.js": "/bbq-front-web/static/js/main.6cfd7305.js",
+    "static/media/background_image.jpg": "/bbq-front-web/static/media/background_image.c5d32bd792fab1257304.jpg",
+    "index.html": "/bbq-front-web/index.html",
+    "main.6a90eac0.css.map": "/bbq-front-web/static/css/main.6a90eac0.css.map",
+    "main.6cfd7305.js.map": "/bbq-front-web/static/js/main.6cfd7305.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a90eac0.css",
+    "static/js/main.6cfd7305.js"
+  ]
+}
