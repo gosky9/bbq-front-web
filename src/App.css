@@ -1,38 +1,314 @@
 .App {
+
+  background-image: url("./static/media/background_image.jpg");
+  min-height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-color: #692e08;
+}
+
+.App .container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0;
+
+}
+.header .walletWrapper{
+  user-select: none;
+  width: 200px;
+  color: #e58f0e;
+  font-size: 16px;
+  padding: 5px 30px;
+  border: 1px solid #e58f0e;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+
+}
+/* .address{
+  margin: 0 auto;
+  width:300px;   
+  height:200px;   
+
+} */
+
+
+
+.home .logo {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: 0 auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.home .slogan {
+  font-size: 16px;
+  line-height: 16px;
+  color: #febf33;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+.home .mainContent {
+  width: 800px;
+  max-width: 100%;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  grid-gap: 20px;
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home .mainContent .leftBox {
+  padding: 20px;
+  background: #e58f0e;
+  border-radius: 20px;
+  display: block;
+}
+.home .mainContent .box {
+  width: calc(50% - 10px);
+}
+.home .mainContent .dataRow {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0;
+  color: #49221a;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.home .mainContent .dataRow .value {
+  font-weight: 600;
+  font-size: 22px;
+  color: #feec6c;
+}
+
+.dataRow .value{
+  font-weight: 600;
+  font-size: 22px;
+  color: #feec6c;
+}
+.home .mainContent .ant-input-affix-wrapper {
+  height: 55px;
+  margin: 0;
+  position: relative;
+  border: 2px solid #731c00;
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: #c6660d;
+}
+.ant-input-affix-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all .3s;
+  display: inline-flex;
+}
+.home .mainContent .ant-input-affix-wrapper .ant-input {
+  border: none;
+  color: #feec6c;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 55px;
+  text-align: center;
+  padding-left: 25px;
+}
+
+.ant-input-suffix {
+  color: #feec6c;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ant-input-suffix {
+  margin-left: 4px;
+}
+.home .mainContent .ant-input-affix-wrapper .ant-input-prefix span, .home .mainContent .ant-input-affix-wrapper .ant-input-suffix span {
+  color: #feec6c;
+}
+.home .mainContent .ant-input-affix-wrapper .suffix {
+  padding-right: 10px;
+}
+
+.home .mainContent .buyButton {
+  border: 2px solid #731c00;
+  border-radius: 30px;
+  color: #731c00;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 42px;
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 10px;
+}
+.home .mainContent .actionWrapper {
+  margin-top: 30px;
+  border-top: 1px dashed #731c00;
+  padding-top: 10px;
+  display: block;
+}
+.home .mainContent .actionWrapper .actionButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .mainContent .actionWrapper .actionButtons div {
+  width: calc(50% - 10px);
+  text-align: center;
+  border: 2px solid #731c00;
+  color: #731c00;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 0;
+  border-radius: 30px;
+}
+.home .mainContent .rightBox {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.home .mainContent .rightBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home .mainContent .contractInfo {
+  background: #c6660d;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.home .mainContent .contractInfo img {
+  width: 25%;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.home .mainContent .contractInfo .data {
+  width: 65%;
+}
+.home .mainContent .contractInfo .data h1 {
+  color: #49221a;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.home .mainContent .contractInfo .data .dataRow {
+  font-size: 17px;
+}
+.home .mainContent .referral {
+  background: #401b0b;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.home .mainContent .referral h1 {
+  color: #e58f0e;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.home .mainContent .referral p {
+  color: #febf33;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.home .mainContent .referral .refWrapper {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.home .mainContent .referral .refWrapper .copyButton, .home .mainContent .referral .refWrapper .referralLink {
+  border: 2px solid #e58f0e;
+  box-sizing: border-box;
+  border-radius: 40px;
+  padding: 5px 20px;
+  color: #e58f0e;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home .mainContent .referral .refWrapper .referralLink {
+  flex-grow: 2;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 70%;
+}
+.referralLink {
+  border: 2px solid #e58f0e;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-weight: 600;
+  padding: 8px 20px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+.copyButton {
+  border-radius: 20px;
+  background: #fbba08;
+  padding: 10px 30px;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
 }
